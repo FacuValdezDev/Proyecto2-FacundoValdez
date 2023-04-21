@@ -168,13 +168,6 @@ body{
     background-color: black;
 }
 @media screen and (max-width: 576px){
-  .header{
-    height: 100vh;
-    background-image: url(../assets/img/render-3d.jpg); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 2rem;
-  }
   .navItem{
     font-size: 1rem;
   }
@@ -203,6 +196,7 @@ body{
   }
   .sectionCards .card{
     margin-top: 5px;
+    height: 80vh;
   }
   .sectionCards .card-group{
     width: 70%;
