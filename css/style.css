@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    height: 100vh;
+    background-image: url(../assets/img/render-3d.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 2rem;
+}
+.navItem{
+    margin: auto 2rem;
+    font-size: 1rem;
+}
+.button,
+.button::before,
+.button::after,
+.button span,
+.button span::before,
+.button span::after
+{
+  transition: all ease .5s;
+}
+
+.button{
+  position: relative;
+  display: inline-block;
+  padding: 0.3em;
+  margin: 1em;
+  border: solid 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover
+{
+  box-shadow: 0 0 5em .5em rgba(50,50,150,0.5);
+}
+
+.button span
+{
+  display: inline-block;
+  width: 100%;
+  padding: 0.6em 2em;
+}
+
+.button:hover span
+{
+  background-color: #fff;
+  color: #112;
+}
+
+.button::before,
+.button::after,
+.button span::before,
+.button span::after
+{
+  content: '';
+  position: absolute;
+  border: 1px;
+}
+
+.button::before,
+.button span::before
+{
+  border-style: solid none;  
+}
+
+.button::before,
+.button span::after{
+  left: 0;
+  top: -0.4em;
+  width: 100%;
+  height: calc(100% + 0.8em);
+}
+
+.button::after,
+.button span::after
+{
+  border-style: none solid;
+}
+
+.button::after,
+.button span::before
+{
+  top: 0;
+  left: -0.4em;
+  height: 100%;
+  width: calc(100% + 0.8em);
+}
+
+.button:hover::after,
+.button:hover span::after
+{
+  transform: scaleY(0);
+}
+
+.button:hover::before,
+.button:hover span::before
+{
+  transform: scaleX(0);
+}
+
+.button:hover span::after,
+.button:hover span::before
+{
+  opacity: 0;
+}
+#sectionHeader{
+    width: 50%;
+    margin: 2rem;
+}
+#sectionHeader h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+}
+
+#sectionHeader p{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    width: 70%;
+}
+
+/* Empieza el main */
+.sectionCards{
+    background-image: url(../assets/img/fotocards.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 2rem;
+}
+.sectionCards h1{
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.sectionCards .card-group{
+    margin-top:5em;
+    flex-flow:row nowrap;
+    width: 50%;
+    justify-content: center;
+}
+.sectionCards .card{
+    height: 60vh;
+}
+.card-img-top{
+    height: 40%;
+    object-fit: cover;
+    padding: 0.5rem;
+}
+/*Productos*/
+.bgProductos{
+  background-image: url(/assets/img/server-2160321_1920.jpg)
+}
+/* Empieza footer */
+#sectionFooter{
+    height: 40vh;
+    padding: 5%;
+    background-color: black;
+}
+@media screen and (max-width: 576px){
+  .navItem{
+    font-size: 1rem;
+  }
+  .smnavbar{
+    background-color: rgb(10, 12, 15);
+    position: absolute;
+    width: 90%;
+  }
+  #sectionHeader .tituloPrincipal .button{
+    display: none;
+  }
+  #sectionHeader{
+    height: 100vh;
+    width: 100%;
+  }
+  #sectionHeader h1{
+    font-size: 1.5rem;
+    margin-top: -2rem;
+  }
+  #sectionHeader p{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .sectionCards h1{
+    font-size: 1.5rem;
+  }
+  .sectionCards .card{
+    margin-top: 5px;
+  }
+  .sectionCards .card-group{
+    width: 70%;
+  }
+  #sectionFooter{
+    height: 100vh;
+  }
+  }
